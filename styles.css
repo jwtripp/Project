@@ -1,0 +1,73 @@
+/* Styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #c0bebe;
+    padding: 20px;
+  }
+  
+  /* Header logo */
+  .banner img {
+    float: left;
+    margin-left: 20px; /* Optional margin to provide some space between text and image */
+  }
+  /* Center banner text */
+  .banner {
+    text-align: center;
+    margin-right: 360px;
+  }
+  
+  /* Banner H1 size */
+  .banner h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Banner H2 size */
+  .banner h2 {
+    font-size: 18px;
+    margin: 0;
+  }  
+
+  /* Banner margin */
+  .banner p {
+    margin: 5px 0;
+  }
+  
+  /* Main */
+  main {
+    padding: 20px;
+  }
+  
+  /* Form */
+  form {
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Space form */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Form text */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Text, email */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
