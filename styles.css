@@ -16,6 +16,7 @@ body {
     float: left;
     margin-left: 20px; /* Optional margin to provide some space between text and image */
   }
+  
   /* Center banner text */
   .banner {
     text-align: center;
