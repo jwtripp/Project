@@ -41,6 +41,7 @@ function validition() { // Only allows to send with valid email
     flyWindow.document.write('<p><strong>Lunch:</strong> ' + myLunch.value.trim() + '</p>');
     flyWindow.document.write('<p><strong>Snack:</strong> ' + mySnack2.value.trim() + '</p>');
     flyWindow.document.write('<p><strong>Dinner:</strong> ' + myDinner.value.trim() + '</p>');
+    
   }
 
   function isValidEmail(visitorEmail) {// Validate the email format
