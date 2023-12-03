@@ -52,6 +52,12 @@ body {
     margin: 0 auto;
   }
   
+  /* Form */
+  form2 {
+    width: 400px;
+    margin: 0 auto;
+  }
+
   /* Space form */
   .form-group {
     margin-bottom: 15px;
