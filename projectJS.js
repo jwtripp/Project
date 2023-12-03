@@ -26,9 +26,26 @@ function validition() { // Only allows to send with valid email
     visitorDinner = document.getElementById("myDinner").value;
 
     flyWindow = window.open('Perfectly Portioned', '_blank'); // Opens window
-    flyWindow.document.write('<style>');
-    flyWindow.document.write('</style></head><body>');
-    flyWindow.document.write('<h1>Your Meal Plan</h1>');
+    flyWindow.document.write('<html>');//new
+    flyWindow.document.write('<head>');//new
+    flyWindow.document.write('<title>Your Meal Plan</title>');//new
+    flyWindow.document.write('<link rel="stylesheet" type="text/css" href="styles.css"></link>')
+    flyWindow.document.write('</head>');//new
+    flyWindow.document.write('<body>');
+    flyWindow.document.write('<header>');
+    flyWindow.document.write('<div class="banner">');
+    flyWindow.document.write('<img src="Logo.png" alt="Banner Photo">');
+    flyWindow.document.write('<h1>Build Your Meal Plan</h1>');
+    flyWindow.document.write('<h2>Name: Jason Tripp</h2>');
+    flyWindow.document.write('<h2>Course: WEB 115</h2>');
+    flyWindow.document.write('<h2>Section: 0002</h2>');
+    flyWindow.document.write('</div>');
+    flyWindow.document.write('</header>');
+    flyWindow.document.write('<main>');
+    flyWindow.document.write('<div class="title">');
+    flyWindow.document.write('<h1><center>Your Meal Plan</center></h1>');
+    flyWindow.document.write('</div>');
+    flyWindow.document.write('<br>');
     flyWindow.document.write('<div class="personal-info">');
     flyWindow.document.write('<h2>Personal Information</h2>');
     flyWindow.document.write('<p><strong>Name:</strong> ' + myName.value.trim() + '</p>');
@@ -36,11 +53,72 @@ function validition() { // Only allows to send with valid email
     flyWindow.document.write('<p><strong>Goals:</strong> ' + myGoal.value.trim() + '</p>');
     flyWindow.document.write('</div>');
     flyWindow.document.write('<h2>Meal Plan</h2>');
-    flyWindow.document.write('<p><strong>Breakfast:</strong> ' + myBreakfast.value.trim() + '</p>');
-    flyWindow.document.write('<p><strong>Snack:</strong> ' + mySnack.value.trim() + '</p>');
-    flyWindow.document.write('<p><strong>Lunch:</strong> ' + myLunch.value.trim() + '</p>');
-    flyWindow.document.write('<p><strong>Snack:</strong> ' + mySnack2.value.trim() + '</p>');
-    flyWindow.document.write('<p><strong>Dinner:</strong> ' + myDinner.value.trim() + '</p>');
+    flyWindow.document.write('<table style="width:100%">');//new
+    flyWindow.document.write('<tr>');
+    flyWindow.document.write('<td></td>');
+    flyWindow.document.write('<th>Monday</th>');
+    flyWindow.document.write('<th>Tuesday</th>');
+    flyWindow.document.write('<th>Wednesday</th>');
+    flyWindow.document.write('<th>Thursday</th>');
+    flyWindow.document.write('<th>Friday</th>');
+    flyWindow.document.write('<th>Saturday</th>');
+    flyWindow.document.write('<th>Sunday</th>');
+    flyWindow.document.write('</tr>');
+    flyWindow.document.write('<tr>');
+    flyWindow.document.write('<td><strong>Breakfast</strong></td>');
+    flyWindow.document.write('<td><tt>' + myBreakfast.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myBreakfast.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myBreakfast.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myBreakfast.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myBreakfast.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myBreakfast.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myBreakfast.value.trim() + '</tt></td>');
+    flyWindow.document.write('</tr>');
+    flyWindow.document.write('<tr>');
+    flyWindow.document.write('<td><strong>Snack</strong></td>');
+    flyWindow.document.write('<td><tt>' + mySnack.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + mySnack.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + mySnack.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + mySnack.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + mySnack.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + mySnack.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + mySnack.value.trim() + '</tt></td>');
+    flyWindow.document.write('</tr>');
+    flyWindow.document.write('<tr>');
+    flyWindow.document.write('<td><strong>Lunch</strong></td>');
+    flyWindow.document.write('<td><tt>' + myLunch.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myLunch.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myLunch.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myLunch.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myLunch.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myLunch.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myLunch.value.trim() + '</tt></td>');
+    flyWindow.document.write('</tr>');
+    flyWindow.document.write('<tr>');
+    flyWindow.document.write('<td><strong>Snack</strong></td>');
+    flyWindow.document.write('<td><tt>' + mySnack2.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + mySnack2.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + mySnack2.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + mySnack2.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + mySnack2.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + mySnack2.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + mySnack2.value.trim() + '</tt></td>');
+    flyWindow.document.write('</tr>');
+    flyWindow.document.write('<tr>');
+    flyWindow.document.write('<td><strong>Dinner</strong></td>');
+    flyWindow.document.write('<td><tt>' + myDinner.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myDinner.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myDinner.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myDinner.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myDinner.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myDinner.value.trim() + '</tt></td>');
+    flyWindow.document.write('<td><tt>' + myDinner.value.trim() + '</tt></td>');
+    flyWindow.document.write('</tr>');
+    flyWindow.document.write('</table>');//new
+    flyWindow.document.write('</main>');
+    flyWindow.document.write('</body>');//new
+    flyWindow.document.write('</html>');
+    flyWindow.document.close();//new
     
   }
 
